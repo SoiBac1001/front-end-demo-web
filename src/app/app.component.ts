@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {MessageService} from "../service/message.service";
+declare var SockJS;
+declare var Stomp;
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo-web';
+  input;
+
+
+  constructor(private messageService : MessageService) {
+  }
+
+  sendMessage(){
+
+  }
 }
