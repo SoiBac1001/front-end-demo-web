@@ -9,7 +9,7 @@ declare var Stomp;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'demo-web';
+  title = 'Chat Room';
   input;
 
 
