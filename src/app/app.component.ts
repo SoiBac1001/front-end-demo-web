@@ -13,9 +13,14 @@ export class AppComponent {
   title = 'Chat Room';
   input;
 
-
   constructor(private messageService: MessageService) {
   }
+
+  user = {
+    name: 'nam',
+    age: 25,
+    info: 'Ha Noi'
+  };
 
   sendMessage() {
     if (this.input) {

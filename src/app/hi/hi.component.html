@@ -1,9 +1,24 @@
-<h2>Hello World</h2>
+<h2>Hello Oh Oh World</h2>
 <h3>Your name: {{user.name}}</h3>
-<p>Your name: {{user.age}}</p>
+<div *ngIf="user.age >= 13; else notGreaterThan13">
+  You can view it
+</div>
+<ng-template #notGreaterThan13>
+  <div>You can not view it</div>
+</ng-template>
+
+<ng-template [ngIf]="user.age >= 15" [ngIfElse]="notGreaterThan13">
+  <div>
+    You can view it with {{user.age}}
+  </div>
+</ng-template>
+
+<p>Your age: {{user.age}}</p>
 <input type="text" [value]="user.name">
 <br>
-<button (click)="alert()">Click here !</button>
+<button (click)="alert($event)">Click here !</button>
 <br>
 <!--<input type="text" [ngModel]="user.name" (ngModelChange)="user.name = $event">-->
 <input type="text" [(ngModel)]="user.name">
+<br>
+<h1>Hi {{info}}</h1>
