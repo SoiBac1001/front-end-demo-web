@@ -22,3 +22,7 @@
 <input type="text" [(ngModel)]="user.name">
 <br>
 <h1>Hi {{info}}</h1>
+<p>================================================================</p>
+<div *ngFor="let author of authors">
+  {{author.id}} - {{author.firstName}} - {{author.lastName}}
+</div>
