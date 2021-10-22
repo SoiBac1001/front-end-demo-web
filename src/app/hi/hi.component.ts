@@ -31,7 +31,17 @@ export class HiComponent implements OnInit, OnDestroy {
       gender: 'Female',
       ipAddress: '183.243.228.65',
     },
+    {
+      id: 3,
+      firstName: 'sdfasd',
+      lastName: 'Sigsadfane',
+      email: 'psisdafgne1@berkeley.edu',
+      gender: 'Female',
+      ipAddress: '183.243.228.65',
+    },
   ];
+
+  tags = ['angular', 'typescript', '100days'];
 
   ngOnInit() {
     console.log('Hi init');
