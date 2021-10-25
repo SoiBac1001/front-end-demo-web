@@ -43,6 +43,10 @@ export class HiComponent implements OnInit, OnDestroy {
 
   tags = ['angular', 'typescript', '100days'];
 
+  isDanger = false;
+  isWarning = false;
+  classes = 'box red-border yellow-background';
+
   ngOnInit() {
     console.log('Hi init');
   }

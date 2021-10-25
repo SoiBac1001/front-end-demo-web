@@ -76,3 +76,20 @@
     oops
   </ng-template>
 </ul>
+<p>================================================================</p>
+<h2>Day 6</h2>
+<p class="foo" style="color: red">ok ok</p>
+<button (click)="isDanger = !isDanger">Toggle Danger</button>
+<button (click)="isWarning = !isWarning">Toggle Warning</button>
+<!--<div class="box" [class.red-border]="isDanger" [class.yellow-background]="isWarning"></div>-->
+<div class="box" [class]="['red-border', 'yellow-background']">hihi - haha</div>
+<!--<div class="box" [class]="{'red-border': isDanger, 'yellow-background': isWarning}">hihi - haha</div>-->
+<div [class]="classes"></div>
+
+<!--
+  - [stype.styleName]
+  - [stype.style-name]
+-->
+
+<!--<p [style.color]="'red'" [style.background-color]="'yellow'" [style.fontSize.rem]="2">Start learning Angular</p>-->
+<p [style]="{color: 'red', backgroundColor: 'yellow', fontSize: '2rem'}">Start learning Angular</p>
