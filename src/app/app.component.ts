@@ -12,6 +12,7 @@ declare var Stomp;
 export class AppComponent {
   title = 'Chat Room';
   input;
+  currentProgress = 70;
 
   constructor(private messageService: MessageService) {
   }

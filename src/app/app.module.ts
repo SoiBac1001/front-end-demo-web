@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import {HelloComponent} from './hello.component';
 import { HiComponent } from './hi/hi.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    HiComponent
+    HiComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

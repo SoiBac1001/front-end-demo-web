@@ -81,6 +81,14 @@
 <p class="foo" style="color: red">ok ok</p>
 <button (click)="isDanger = !isDanger">Toggle Danger</button>
 <button (click)="isWarning = !isWarning">Toggle Warning</button>
+
+<!--
+  - [class.className]
+  - [class]="array"
+  - [class]="object" {[class-name: string]: boolean}
+  - [class]="variable"
+-->
+
 <!--<div class="box" [class.red-border]="isDanger" [class.yellow-background]="isWarning"></div>-->
 <div class="box" [class]="['red-border', 'yellow-background']">hihi - haha</div>
 <!--<div class="box" [class]="{'red-border': isDanger, 'yellow-background': isWarning}">hihi - haha</div>-->
@@ -89,7 +97,11 @@
 <!--
   - [stype.styleName]
   - [stype.style-name]
+  - [style.styleName.unit]
+  - [style]="object"
+  - [style.css-variable]
 -->
 
-<!--<p [style.color]="'red'" [style.background-color]="'yellow'" [style.fontSize.rem]="2">Start learning Angular</p>-->
-<p [style]="{color: 'red', backgroundColor: 'yellow', fontSize: '2rem'}">Start learning Angular</p>
+<p [style.color]="'var{--text-color}'" [style.background-color]="'yellow'" [style.fontSize.rem]="2">Start learning Angular</p>
+<!--<p [style]="{color: 'red', backgroundColor: 'yellow', fontSize: '2rem'}">Start learning Angular</p>-->
+<!--<p [style]="{color: 'var{&#45;&#45;text-color}', backgroundColor: 'yellow', fontSize: '2rem'}">Start learning Angular</p>-->
