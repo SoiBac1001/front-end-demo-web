@@ -7,13 +7,17 @@ import {FormsModule} from '@angular/forms';
 import {HelloComponent} from './hello.component';
 import { HiComponent } from './hi/hi.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { AuthorListComponent } from './author-list/author-list.component';
+import { AuthorDetailComponent } from './author-detail/author-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     HiComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    AuthorListComponent,
+    AuthorDetailComponent
   ],
   imports: [
     BrowserModule,
