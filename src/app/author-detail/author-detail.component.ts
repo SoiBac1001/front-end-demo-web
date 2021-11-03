@@ -8,6 +8,7 @@ import {Author} from '../model/Author';
 })
 export class AuthorDetailComponent implements OnInit {
   @Input() author : Author;
+  @Output() selectAuthor = new EventEmitter<Author>();
   @Output() deleteAuthor = new EventEmitter<Author>();
 
   constructor() { }
@@ -17,5 +18,9 @@ export class AuthorDetailComponent implements OnInit {
 
   handleDelete(){
     this.deleteAuthor.emit(this.author);
+  }
+
+  handleSelect(){
+    this.selectAuthor.emit(this.author);
   }
 }

@@ -1,4 +1,5 @@
 <div *ngIf="author">
     <strong>{{author.firstName}} - {{author.lastName}}</strong>&nbsp;
+    <button (click)="handleSelect()">Select</button>
     <button (click)="handleDelete()">x</button>
 </div>
